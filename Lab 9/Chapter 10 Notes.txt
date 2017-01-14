@@ -1,0 +1,100 @@
+Procedural Programming:
+Writting a program that performs one task
+- Data items are passed between functions 
+
+Object Oriented Programming:
+- Entity that contains data and prcedures
+_Data is known as data attributes (variables that reference data)
+_Procedures are known as methods (methods perform opeations on the data attributeS) 
+
+OOP - addresses the problem of code and dtat separation throught encapsulations and data hiding. 
+- Encapsulation: combining dtat and code into a single object
+- Data Hiding: Object's data attributes are hidden from code outside the object (protects from accidental 
+corruption and outside code does not need to know internal structure of the object)
+
+Object reusability: can be used in defferent programs
+- Exampl 3D image can be used in multiple places
+
+Data Attributes:  Define the state of an object
+ex: clock object would have a second, minute, and hour data attributes
+- Public Methods: Allow external code to manipulate the object 
+   - example set_time, set_alarm_time etc
+- Private Methods: used for object's inner workings 
+   - example the clocks software would have current_second (0-59), current_hour (1-12) etc
+- Data attributes are values that define the state that the object is in
+
+- To change the attribute value, you must use one of the object's methods
+
+checkpoint1:
+(1) contains data and procedures
+(2) Combining data and code into an object
+(3) avoid corruption, security
+(4) public methods can be accessed outside, private is internal 
+
+Class: Code that specifies the data attributes and methods of a particular type of object
+- like a blueprint of a house or a cookie cutter 
+- a desciption of an object's characteristics
+- each object created from a class is called an instance
+Instance: similar to a specific house built according to the blueprint of a specific cookie 
+ >> There can be many instances of one class
+Class vs object:
+the cookie cutter itself is not a cookie, it describes a cookie. That cookie cutter can be used to make
+several cookies
+
+Class definitions: set of statements that define a class's methods and data attributes
+FORMAT:
+class Class_name:
+    statement
+
+method definition like any other python function definition
+***** 
+self parameter: required in everymethod in the class-references the specific object that method is working on
+ 
+-Initializer method:
+__init__ auto executed when instance of class is created in memory
+FORMAT:
+def __init__ (self):
+^^ usually the first method in a class definition
+
+
+- To create a new instance of a class call the initailzer method
+FORMAT:
+my_instance = Class_Name()
+- To call any of the calss methods using the *** get from slides 
+
+
+- Hiding attributes and Storing Classes in Modules: for protection 
+example: __current_minute
++ classes can be stored in modules, aka organization becomes very important
+- module can be imported for use of that class 
+
+- Class methods can have multiple parameter in addition to self:
+example: BankAccount object is created with a balance __init__(self, bal)
+
+- The __str__ method: displays the objects state
+- automatically called when the object is passed as an argument to the print function and the str function 
+
+Checkpoint2:
+(1) Initialize the objects the data attributes and executes immediately after the object is created 
+(2) reference the specific object that the moethod is supposed to operate on 
+(3) start with "__" 
+(4) Returns a string of the object 
+(5) by passing the argument 
+
+Working with Instances: 
+can make multiple ie coin1, coin2, coin3 are all diffrent objects (instances)
+
+Accessor and Mutator Methods: class's data attributes have methods to access and change them
+- Accessor: return a value from a class's attribute without changing it (safe way for code outside the class
+to retrieve the value of attributes)
+- Mutator: store or change the value of a data attribute
+
+
+****** 15 points EXTRA CREDIT for LAB 9 ******
+send both the cellphone module on page 443 (10-12 and 10-14)
+
+Final Exam Test Program:
+will use a list 
+writes and reads to list to an external file
+will manipulate that file 
+display it back to the screen

@@ -1,0 +1,14 @@
+Create Nested List with 12 columns and 2 rows
+Fill that list with the fahrenheit temp list
+Fill that list with the celcius temp list
+Need to pull the index of the Fahrenheit temp list into a conversion function
+
+index = 0
+while index < len(fahrenheit_temps):
+    celcius_pull = (fahrenheit_temps[index] - 32) * (5 / 9)
+    celcius_temps.insert(index,(format(celcius_pull, '.0f')))
+    index += 1 
+
+function does the math
+function returns converted value into the appropriately indexed location on celcius temp list
+
